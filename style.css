@@ -41,7 +41,7 @@ section {
     align-items: flex-start;
     gap: 2rem;
     width: 100%;
-    max-width: 768px;
+    max-width: 736px;
 }
 
 .container {
