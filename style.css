@@ -33,6 +33,10 @@ details {
 }
 
 summary {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: start;
     cursor: pointer;
     list-style: none;
 }
