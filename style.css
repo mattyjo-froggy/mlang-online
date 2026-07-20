@@ -30,8 +30,10 @@ p {
     border-radius: 8px;
     font-size: 1rem;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .button-primary:hover {
     background-color: #111;
+    text-decoration: none;
 }
