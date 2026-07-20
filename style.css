@@ -8,8 +8,6 @@ body {
 
 main {
     max-width: 768px;
-    margin: 5vw auto;
-    padding: 2rem;
 }
 
 h1 {
@@ -22,4 +20,18 @@ p {
     font-size: 1rem;
     line-height: 1.5rem;
     margin-top: 0;
+}
+
+.button-primary {
+    background-color: #242424;
+    color: #f4f4f4;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.button-primary:hover {
+    background-color: #111;
 }
