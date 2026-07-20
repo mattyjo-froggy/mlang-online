@@ -66,6 +66,7 @@ section {
     gap: 0.5rem;
     padding: 2rem;
     border-radius: 0.5rem;
+    width: 100%;
     max-width: 100%;
     background-color: var(--color-card);
 }
@@ -77,7 +78,7 @@ h1 {
 }
 
 p {
-    max-width: 60ch;
+    max-width: 100%;
     font-size: 1rem;
     line-height: 1.5rem;
     font-weight: 400;
