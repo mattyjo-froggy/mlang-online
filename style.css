@@ -16,41 +16,18 @@ ol {
     --color-text: #737373;
     --color-text-button: #242424;
     --color-background: #f4f4f4;
+    --color-card: white;
 }
 
 body {
     display: flex;
     flex-direction: column;
+    max-width: 768px;
     margin: 5vw;
     gap: 8rem;
     font-family: var(--font-body);
     color: var(--color-text);
     background: var(--color-background);
-}
-
-details {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    padding: 1rem 0;
-}
-
-summary {
-    display: flex;
-    flex-direction: row;
-    gap: 0.5rem;
-    align-items: start;
-    cursor: pointer;
-    list-style: none;
-}
-
-summary::after {
-    content: "+";
-    float: right;
-}
-
-details[open] summary::after {
-    content: "-";
 }
 
 .section {
@@ -80,10 +57,14 @@ details[open] summary::after {
     gap: 1rem;
 }
 
-.accordion-items {
+.card {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    background-color: var(--color-card);
 }
 
 h1 {
