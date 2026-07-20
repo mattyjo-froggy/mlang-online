@@ -66,3 +66,13 @@ p {
 .text-button:hover {
     text-decoration: underline;
 }
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.hero-img {
+    width: 64px;
+}
