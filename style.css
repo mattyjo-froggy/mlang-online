@@ -13,19 +13,37 @@ ol {
 
 :root {
     --font-body: "Inter", system-ui, sans-serif;
-    --text-color: #737373;
-    --text-button-color: #242424;
+    --color-text: #737373;
+    --color-text-button: #242424;
+    --color-background: #f4f4f4;
 }
 
 body {
-    margin: 5vw;
     display: flex;
     flex-direction: column;
+    margin: 5vw;
     gap: 8rem;
     font-family: var(--font-body);
-    line-height: 1.5;
-    color: var(--text-color);
-    background: #f4f4f4;
+    color: var(--color-text);
+    background: var(--color-background);
+}
+
+details {
+    padding: 1rem 0;
+}
+
+summary {
+    cursor: pointer;
+    list-style: none;
+}
+
+summary::after {
+    content: "+";
+    float: right;
+}
+
+details[open] summary::after {
+    content: "-";
 }
 
 .section {
@@ -55,6 +73,10 @@ body {
     gap: 1rem;
 }
 
+.accordion-items {
+    margin-top: 1rem;
+}
+
 h1 {
     font-size: 3rem;
     line-height: 4rem;
@@ -70,7 +92,7 @@ p {
 
 .text-button {
     display: inline-flex;
-    color: var(--text-button-color);
+    color: var(--color-text-button);
     border: none;
     font-size: 1rem;
     font-weight: 400;
