@@ -97,6 +97,7 @@ p {
     color: var(--color-text-button);
     border: none;
     font-size: 1rem;
+    line-height: 1.5rem;
     font-weight: 400;
     cursor: pointer;
     text-decoration: none;
