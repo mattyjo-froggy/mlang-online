@@ -22,7 +22,7 @@ p {
 }
 
 .button-primary {
-    display: flex;
+    display: inline-flex;
     background-color: #242424;
     color: #f4f4f4;
     padding: 8px 16px;
