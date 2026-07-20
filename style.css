@@ -36,6 +36,13 @@ body {
     gap: 1rem;
 }
 
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 2rem;
+}
+
 h1 {
     font-size: 3rem;
     line-height: 4rem;
@@ -62,4 +69,17 @@ p {
 .button-primary:hover {
     background-color: #040404;
     text-decoration: none;
+}
+
+.text-button {
+    display: inline-flex;
+    color: #242424;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.text-button:hover {
+    text-decoration: underline;
 }
