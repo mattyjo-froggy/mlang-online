@@ -13,7 +13,8 @@ ol {
 
 :root {
     --font-body: "Inter", system-ui, sans-serif;
-    --text-color: #242424;
+    --text-color: #737373;
+    --text-button-color: #242424;
 }
 
 body {
@@ -69,7 +70,7 @@ p {
 
 .text-button {
     display: inline-flex;
-    color: var(--text-color);
+    color: var(--text-button-color);
     border: none;
     font-size: 1rem;
     font-weight: 400;
