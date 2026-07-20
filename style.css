@@ -6,10 +6,6 @@ body {
     background: #f4f4f4;
 }
 
-main {
-    max-width: 768px;
-}
-
 h1 {
     font-size: 3rem;
     line-height: 4rem;
@@ -26,6 +22,7 @@ p {
 }
 
 .button-primary {
+    display: flex;
     background-color: #242424;
     color: #f4f4f4;
     padding: 8px 16px;
