@@ -21,6 +21,7 @@ ol {
     --color-text-button: #242424;
     --color-background: #f4f4f4;
     --color-card: white;
+    --line-height: 1.6rem;
 }
 
 body {
@@ -92,7 +93,7 @@ h1 {
 p {
     max-width: 100%;
     font-size: 1rem;
-    line-height: 1.75rem;
+    line-height: var(--line-height);
     font-weight: 400;
 }
 
@@ -101,7 +102,7 @@ p {
     color: var(--color-text-button);
     border: none;
     font-size: 1rem;
-    line-height: 1.5rem;
+    line-height: var(--line-height);
     font-weight: 400;
     cursor: pointer;
     text-decoration: none;
