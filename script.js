@@ -1,7 +1,10 @@
 const grid = document.querySelector(".grid");
 
-const column = document.createElement("div");
+const leftColumn = document.createElement("div");
+leftColumn.classList.add("column");
 
-column.classList.add("column");
+const rightColumn = document.createElement("div");
+rightColumn.classList.add("column");
 
-grid.appendChild(column);
+grid.appendChild(leftColumn);
+grid.appendChild(rightColumn);

@@ -60,6 +60,12 @@ section {
     row-gap: 1rem;
 }
 
+.column {
+    flex: 1;
+    min-height: 100px;
+    background: red;
+}
+
 .header {
     display: flex;
     flex-direction: row;
