@@ -22,6 +22,7 @@ ol {
     --color-background: #f4f4f4;
     --color-card: white;
     --line-height: 1.6rem;
+    --gutter: 1rem;
 }
 
 body {
@@ -78,7 +79,15 @@ section {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    width: 100%;
+    margin-inline: calc(-1 * var(--gutter));
+    padding: 1rem var(--gutter);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+.card:hover {
+    background-color: #ededed;
 }
 
 h1 {
