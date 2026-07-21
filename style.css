@@ -121,3 +121,7 @@ img {
 .hero-img {
     width: 4rem;
 }
+
+.card-img {
+    width: 100%;
+}
