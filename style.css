@@ -168,3 +168,14 @@ img {
     object-fit: cover;
     margin-bottom: 0.5rem;
 }
+
+@media (max-width: 700px) {
+    .grid {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .column {
+        width: 100%;
+    }
+}
