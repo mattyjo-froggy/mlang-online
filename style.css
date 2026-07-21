@@ -127,6 +127,7 @@ p {
     padding: 0.5rem 0.75rem;
     border-radius: 4rem;
     width: auto;
+    margin-top: 0.25rem;
 }
 
 .text-button {
