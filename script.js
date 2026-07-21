@@ -12,3 +12,5 @@ grid.innerHTML = "";
 
 grid.appendChild(leftColumn);
 grid.appendChild(rightColumn);
+
+leftColumn.appendChild(cards[0]);
