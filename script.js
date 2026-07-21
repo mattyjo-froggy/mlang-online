@@ -1,30 +1,38 @@
 const grid = document.querySelector(".grid");
-
-// Save the original cards
 const cards = [...document.querySelectorAll(".card")];
 
-// Remove everything from the grid
-grid.innerHTML = "";
+function createColumns(numberOfColumns) {
 
-// Create columns
-const leftColumn = document.createElement("div");
-leftColumn.classList.add("column");
+    grid.innerHTML = "";
 
-const rightColumn = document.createElement("div");
-rightColumn.classList.add("column");
+    const columns = [];
 
-// Add columns to the grid
-grid.appendChild(leftColumn);
-grid.appendChild(rightColumn);
+    for (let i = 0; i < numberOfColumns; i++) {
+        const column = document.createElement("div");
+        column.classList.add("column");
 
-// Put cards into the columns
-cards.forEach((card, index) => {
-
-    console.log(index, card.querySelector(".p-title")?.textContent);
-
-    if (index % 2 === 0) {
-        leftColumn.appendChild(card);
-    } else {
-        rightColumn.appendChild(card);
+        columns.push(column);
+        grid.appendChild(column);
     }
-});
+
+    cards.forEach((card, index) => {
+        const columnIndex = index % numberOfColumns;
+        columns[columnIndex].appendChild(card);
+    });
+}
+
+createColumns(2);
+
+function updateLayout() {
+
+    if (window.innerWidth <= 700) {
+        createColumns(1);
+    } else {
+        createColumns(2);
+    }
+
+    }
+
+updateLayout();
+
+window.addEventListener("resize", updateLayout);
