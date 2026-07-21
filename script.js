@@ -5,5 +5,3 @@ const column = document.createElement("div");
 column.classList.add("column");
 
 grid.appendChild(column);
-
-console.log(column);
