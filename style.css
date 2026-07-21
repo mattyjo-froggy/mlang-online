@@ -64,7 +64,8 @@ section {
 .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 4rem;
+    column-gap: 2rem;
+    row-gap: 1rem;
 }
 
 .header {
