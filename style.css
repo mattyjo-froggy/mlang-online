@@ -78,6 +78,7 @@ section {
 .card {
     display: flex;
     flex-direction: column;
+    width: 100%;
     gap: 0.5rem;
     margin-inline: calc(-1 * var(--gutter));
     padding: 1rem var(--gutter);
@@ -101,6 +102,10 @@ p {
     font-size: 1rem;
     line-height: var(--line-height);
     font-weight: 400;
+}
+
+.p-title {
+    color: #242424;
 }
 
 .text-button {
