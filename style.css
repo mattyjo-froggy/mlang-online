@@ -124,7 +124,7 @@ p {
     font-size: 0.8rem;
     line-height: 1rem;
     background-color: #dfdfdf;
-    padding: 0.5rem;
+    padding: 0.5rem 0.75rem;
     border-radius: 4rem;
     width: auto;
 }
