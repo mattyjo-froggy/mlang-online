@@ -15,6 +15,8 @@ grid.appendChild(rightColumn);
 
 cards.forEach((card, index) => {
 
+    console.log(index, card.querySelector(".p-title")?.textContent);
+
     if (index % 2 === 0) {
         leftColumn.appendChild(card);
     } else {
