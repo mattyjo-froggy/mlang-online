@@ -55,7 +55,7 @@ section {
 
 .grid {
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
     align-items: flex-start;
 }
 
